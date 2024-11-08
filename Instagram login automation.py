@@ -32,7 +32,7 @@ try:
     
     # Step 4: Locate and click the login button
     login_button = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))
+        EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']")) 
     )
     login_button.click()
     
