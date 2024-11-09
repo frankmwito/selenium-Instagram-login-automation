@@ -15,13 +15,18 @@ class LocatingElements():
         driver.get("https://www.selenium.dev/")  # Load the Selenium website
 
         # 1. Locate and interact with the “Downloads” link using CSS Selector (by class)
-        downloads_link = driver.find_element(By.CSS_SELECTOR, ".nav-item:nth-child(2) > a")
+        downloads_link = driver.find_element(By.CSS_SELECTOR, "#navbarDropdown")
         print("Downloads link text:", downloads_link.text)
         downloads_link.click()  # Click the link
         driver.back()  # Navigate back
-
+        
+        # locate first the blog to locate the search input
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#main_navbar > ul > li:nth-child(6) > a > span')))
+        blog = driver.find_element(By.CSS_SELECTOR, '#main_navbar > ul > li:nth-child(6) > a > span')
+        blog.click()
+        
         # 2. Locate the first search input field by attribute (ID)
-        search_input = driver.find_element(By.CSS_SELECTOR, "input[placeholder='Search']")
+        search_input = driver.find_element(By.CSS_SELECTOR, "#docsearch-0 > button")
         search_input.send_keys("WebDriver" + Keys.RETURN)  # Enter a search term and submit
         time.sleep(2)  # Allow time for search results to load
 
