@@ -1,0 +1,12 @@
+Assignment 2: Working with Dropdowns, Checkboxes, and Radio Buttons
+Objective: Practice interacting with dropdown menus, checkboxes, and radio buttons.
+
+Instructions:
+
+Go to a sample form website like demoqa.
+Locate and select options in the following fields:
+Select different options from dropdown menus (e.g., “Select Title,” “Select Age Group”).
+Click a checkbox and verify that it was selected.
+Click a radio button and verify the selection.
+Print the selected option, checkbox, or radio button value.
+Expected Outcome: A script that selects and verifies items in dropdowns, checkboxes, and radio buttons.

@@ -27,7 +27,7 @@ class DemoPractice():
         item1 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "img[alt='Sauce Labs Backpack']")))
         item1.click()
         
-        time.sleep(15)
+        time.sleep(5)
         driver.quit()
         
 demo = DemoPractice()
