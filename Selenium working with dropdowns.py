@@ -24,7 +24,6 @@ try:
     dropdown_item = WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.LINK_TEXT, "Events")))
     dropdown_item.click()  # Click the "Events" item in the dropdown
-
     # Pause for observation (optional)
     time.sleep(20)
 

@@ -1,0 +1,10 @@
+Instructions:
+
+Open the Sauce Demo website.
+Using XPath and CSS Selectors:
+Locate the username and password fields by ID, and enter credentials.
+Locate and click the login button by Class Name.
+Locate the “Products” header using CSS Selectors.
+Locate any product image using XPath, then retrieve its alt attribute and print it.
+Close the browser.
+Expected Outcome: A script that logs into the Sauce Demo page and prints product details using various locators.
